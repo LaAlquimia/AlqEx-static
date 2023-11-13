@@ -4,28 +4,7 @@
     <Block2 />
     <div class="trade">
       <div class="content" style="background-color: initial">
-        <h3 class="text-center trade-title">{{ $t('bitcoin_price') }}</h3>
-        <div class="graph-wrapper">
-          <div class="btc-chart" v-if="dataGraph.length" :key="dataGraph.length">
-            <div class="">
-              <div data-highcharts-chart="0" class="overflow-hidden graph-wrapper">
-                <div
-                  style="width: 100%"
-                  id="highcharts"
-                  dir="ltr"
-                  class="highcharts-container"
-                ></div>
-              </div>
-            </div>
-          </div>
-          <div class="text-error" v-else>
-            <div class="">
-              <div class="content-disabled">
-                <img width="100%" src="/img/graph-empty.png" alt="">
-              </div>
-            </div>
-          </div>
-        </div>
+        
         <CurrencyList :filteredPairs="filteredPairs" />
       </div>
     </div>
@@ -40,12 +19,12 @@ import CurrencyList from '~/components/main/CurrencyList.vue'
 
 import Block1 from '../components/main/Block1.vue'
 import Block2 from '../components/main/Block2.vue'
-import Block4 from '../components/main/Block4.vue'
-import Block5 from '../components/main/Block5.vue'
+// import Block4 from '../components/main/Block4.vue'
+// import Block5 from '../components/main/Block5.vue'
 
 export default {
   name: "Blog",
-  components: { CurrencyList, Block1, Block2, Block4, Block5 },
+  components: { CurrencyList, Block1, Block2 },
   head() {
     return {
       title: `${this.$config.axios.title} ${this.$t('title')}`,
@@ -205,7 +184,7 @@ body h3 {
   line-height: 60px;
 }
 .trade {
-  background: #EEF1F9;
+  background: #181a20;
   padding: 114px 0 138px;
 }
 .graph-wrapper {

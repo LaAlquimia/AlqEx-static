@@ -1,6 +1,11 @@
 const development = process.env.NODE_ENV !== 'production'
 
 export default {
+  server: {
+    port: 8000, // default: 3000
+    host: '0.0.0.0' // default: localhost
+  },
+
   debug: true,
   version: Date.now(),
   generate: {

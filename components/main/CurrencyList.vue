@@ -74,7 +74,7 @@ export default {
 	color: rgb(62, 71, 95);
 	margin-left: auto;
 	margin-right: auto;
-  background: #fff;
+  background: #363941;
   box-shadow: 0px 0px 60px rgba(110, 127, 162, 0.15);
   border-radius: 10px;
   overflow: hidden;
@@ -84,7 +84,7 @@ export default {
   width: 100%;
 }
 .currency-list-main-page tr:nth-of-type(odd) {
-  background-color: #F8FAFD;
+  background-color: #363941;
 }
 thead tr th {
   background: #6352CD !important;

@@ -95,6 +95,8 @@ export default {
         return 'ru_RU'
       } else if(this.$route.params.lang === 'en') {
         return 'en_US'
+      }else if(this.$route.params.lang === 'es') {
+        return 'es_ES'
       }
     },
     getRoute() {

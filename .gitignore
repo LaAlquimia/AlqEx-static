@@ -92,3 +92,7 @@ sw.*
 .env.local
 .env.development
 .env.*.local
+
+# Nuxt Config 
+
+nuxt.config.js

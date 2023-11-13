@@ -3,8 +3,8 @@
     <div class="content flex justify-between">
       <div class="header__logo">
         <nuxt-link :to="`/${lang}`" class="header__logo-link">
-          <img :src="this.$config.axios.logo ? this.$config.axios.logo : '/img/logo_st.svg'" class="logo-desc" alt="logo" />
-          <img :src="this.$config.axios.logo ? this.$config.axios.logo : '/img/logo_st-black.svg'" class="logo-mob" alt="logo" />
+          <img :src="this.$config.axios.logo ? this.$config.axios.logo : '/img/logo_st.svg'" style="height: 40px; width: 150px;" class="logo-desc" alt="logo" />
+          <img :src="this.$config.axios.logo ? this.$config.axios.logo : '/img/logo_st-black.svg'" style="height: 40px; width: 150px;"  class="logo-mob" alt="logo" />
         </nuxt-link>
       </div>
       <div class="header__etc flex justify-between flex-no-wrap">
@@ -168,7 +168,7 @@ export default {
   right: 0;
   display: block;
   width: 151%;
-  background: #FFF;
+  background: #181a20;
   box-shadow: 0 0 2px 1px #00000040;
 }
 .navigation__item {
@@ -210,7 +210,7 @@ export default {
 .header-btn {
   width: 102px;
   height: 46px;
-  border: 1px solid #483D89;
+  border: 1px solid #FFDD21;
   border-radius: 5px;
   text-align: center;
   color: #fff;
@@ -239,9 +239,9 @@ export default {
   margin-left: 20px;
   width: 130px;
   height: 46px;
-  background: #6352CD;
+  background: #FFDD21;
   border-radius: 5px;
-  color: #fff;
+  color: #181a20;
   display: flex;
   align-items: center;
   justify-content: center;
